@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: darkslategrey;
+    background-color: white;
+  }
+
+@media only screen and (max-width: 480px) { 
+
+    #logotext {
+        display: none;
+    }
+    #menu li {
+        display: none;
+    }
+    #section1 {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    #columnphotosection1 {
+        width: 100%;
+        flex-grow: 1;
+       
+    }
+    body #section1 {
+        padding: 0px 0px;
+    }
+
+    #startherekolom {
+        flex-grow: 1;
+        padding: 32px 16px 32px 16px;
+    }
+
+    #section2 {
+        padding: 0px;
+    }
+    #section2 #practicingcolumn {
+        display: none;
+    }
+
+    #section2 #calendercolumn .calendercard .boxtext {
+        align-items: flex-start;
+    }
+
+
+
+    #calendercolumn {
+        flex-grow: 1;
+    }
+    #calendercolumn .calendercard {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+        column-gap: 20px;
+        max-width: 100%;
+    }
+    #calendercolumn .calendercard .boxtext {
+        padding-left: 16px;
+    }
+
+    .calendercard #photosquare {
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+        padding-left: 0px;
+    }
+    #section3 {
+        width: 100%;
+        padding: 0px;
+        background-color: white;
+    }
+    #section3 h1 {
+        width: 100%;
+    }
+    #section3 .cards .card .cardphoto {
+        display: none;
+    }
+    #section3 .cards .card p {
+        display: none;
+    }
+    #section3 .cards {
+        flex-direction: column;
+        row-gap: 8px;
+        padding: 0 16px;
+    }
+    #section3 .cards .card {
+        max-width: 100%;
+        background-color: lightgrey;
+    }
+    #section3 .cards .card .cardtext {
+
+    }
+    body #section3  {
+        background-color: white;
+    }
+    #section4 .section4content .videocolumn .videocolumntext {
+        display: none;
+    }
+    #section4 .section4content .cardcolumn {
+        display: none;
+    }
+    #section4 {
+        width: 100%;
+    }
+    body #section4 h1 {
+       padding: 32px 0px 0px 0px;
+    }
+    #section4 .section4content {
+        padding: 0px;
+    }
+    #section4 .section4content .videocolumn {
+        width: 100%;
+        flex-direction: row;
+    }
+    #section4 .section4content .videocolumn .video {
+        width: 100%;
+        flex-direction: row;
+        padding: 16px 0px 0px 0px;
+    }
+
+    body .footer {
+        padding: 16px 0;
+        border: none;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    body .footer .footermenu {
+        display: none;
+    }
+  
+    
+}
+
+p, a {
+    font-size: 13px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    background-color: white;
+    width: 100%;
+}
+
+#logo {
+    height: px;
+    background-color: yellow;
+}
+
+#logosymbol {
+    height: 40px;
+    margin-left: 24px;
+}
+
+#logotext {
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 70px;
+    font-size: 18px;
+}
+
+#menu {
+   display: flex;
+   margin-right: 24px;
+}
+
+#menu li {
+    padding-left: 16px;
+    list-style-type: none;
+}
+
+a, a:hover, a:active, a:visited { 
+    color: black; 
+    text-decoration: none;
+}
+
+#section1 {
+    background-color: lightgrey;
+    display: flex;
+    column-gap: 24px;
+    padding: 32px 24px;
+}
+
+#columnphotosection1 {
+    width: 60%;
+}
+
+#photosection1 {
+    width: 100%;
+}
+
+#startherekolom {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    row-gap: 20px;
+    
+}
+
+.button  {
+    background-color: darkslategrey;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+#section2 {
+    background-color: white;
+    display: flex;
+    column-gap: 24px;
+    padding: 32px 24px;
+}
+
+#photosection2 {
+    width: 100%;
+    padding-bottom: 32px;
+}
+
+#practicingcolumn {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#practicingcolumn p {
+    padding-top: 24px;
+
+}
+#calendercolumn {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    row-gap: 20px;
+}
+
+#photosquare {
+    height: auto;
+    width: 35%;
+    padding-left: 16px;
+}
+
+.calendercard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.boxtext {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 65%;
+
+}
+
+.boxtext a {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    color: lightblue;
+}
+
+#section3 {
+    background-color: lightgrey;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+#section3 h1 {
+    padding: 32px 0px;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 32px;
+    padding: 0px 72px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    text-align: left;
+    max-width: 30%;
+    overflow: hidden;
+}
+
+.cardphoto {
+    width: auto;
+    max-height: 200px;
+}
+
+.cardtext {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px;
+    row-gap: 8px;
+}
+
+#section4 {
+    background-color: white;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+#section4 h1 {
+    padding: 32px 0px;
+}
+
+.section4content {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 24px;
+}
+
+.videocolumn {
+    width: 60%;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.video {
+    padding: 0px 24px 24px 0px;
+
+}
+
+.videocolumntext {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.cardcolumn {
+    width: 40%;
+}
+
+.section4card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    row-gap: 8px;
+}
+
+.cardcolumn #photosquare {
+    padding: 16px;
+}
+
+.section4cardtext {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.footer {
+    margin-bottom: 50px;
+    border: black 0.5px solid;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.footer p, ul {
+    font-size: 12px;
+}
+
+.copyright {
+    padding-top: 16px;
+    float: left;
+}
+
+.footermenu {
+    display: flex;
+    float: right;
+    column-gap: 20px;
+    padding-top: 16px;
+    list-style-type: none;
+}
